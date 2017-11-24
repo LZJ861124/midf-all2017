@@ -1,15 +1,15 @@
 /**
-*  @file       index.js
-*  @brief      The entry function of the httpd.
-*  @author     LZJ861124 (bii861124@gmail.com)
-*  @date       11/24/2017 created.
-*  @date       11/24/2017 last modified.
-*  @version    0.1.0
-*  @copyright  MIT, (C) 2017 LZJ861124
-*  @details
-*
-*  The entry function of the httpd.
-*/
+ *  @file       index.js
+ *  @brief      The entry function of the httpd.
+ *  @author     LZJ861124 (bii861124@gmail.com)
+ *  @date       11/24/2017 created.
+ *  @date       11/24/2017 last modified.
+ *  @version    0.1.0
+ *  @copyright  MIT, (C) 2017 LZJ861124
+ *  @details
+ *
+ *  The entry function of the httpd.
+ */
 'use strict';
 
 let http = require('http');
@@ -17,15 +17,15 @@ let http = require('http');
 const routingTable = require('./config.json');
 
 /**
-* 利用 http.ServerResponse 物件回傳檔案內容
-*
-* @name serve
-* @function
-* @param response - http.ServerResponse 物件
-* @param fname - 要回傳的檔案名
-* @param datatype - 回傳檔案內容的 Mine-Type
-* @returns {undefined}
-*/
+  * 利用 http.ServerResponse 物件回傳檔案內容
+  *
+  * @name serve
+  * @function
+  * @param response - http.ServerResponse 物件
+  * @param fname - 要回傳的檔案名
+  * @param datatype - 回傳檔案內容的 Mine-Type
+  * @returns {undefined}
+  */
 let serve = (response, fname, datatype) => {
   let fs = require('fs');
 
@@ -75,3 +75,5 @@ http.createServer((request, response) => {
 
 // log message to Console
 console.log('伺服器啓動，連線 url:  http://127.0.0.1:8088/');
+
+// index.js
